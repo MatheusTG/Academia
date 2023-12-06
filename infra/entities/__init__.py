@@ -1,0 +1,1 @@
+from .treinos import Treinos
