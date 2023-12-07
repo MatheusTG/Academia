@@ -1,6 +1,7 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy_utils import database_exists, create_database
+from infra.configs.base import Base
 
 class DBConnectionHandler:
   def __init__(self):
@@ -12,6 +13,7 @@ class DBConnectionHandler:
     engine = create_engine(self.__connection_string)
     if not database_exists(engine.url):
       create_database(engine.url)
+      Base.metadata.create_all(engine)
     return engine
 
   def get_engine(self):
