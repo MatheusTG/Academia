@@ -11,3 +11,5 @@ db = DBConnectionHandler()
 # data = repo.select()
   
 # print(data)
+
+#oi amgos estou aq
