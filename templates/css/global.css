@@ -6,3 +6,12 @@
 img {
   max-width: 100%;
 }
+
+:root {
+  --cor01:#FFFFFF;
+  --cor02:#000000;
+  --cor03:#FBBA00;
+  --cor04:#0B1DBA;
+  --cor05:#808080;
+}
+

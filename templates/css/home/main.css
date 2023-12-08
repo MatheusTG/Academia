@@ -1,0 +1,32 @@
+
+article > header{
+    height: 05%vh;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+
+header > nav{
+    display: flex;
+    flex-direction: row;
+}
+
+main{
+    background-color: #808080;
+}
+
+.treinos-home{
+    background-color: aquamarine;
+}
+
+.planos-home{
+    background-color: violet;
+}
+
+footer{
+    background-color: brown;
+}
+
+img{
+    max-width: 100%;
+}
