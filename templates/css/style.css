@@ -1,0 +1,9 @@
+/* Geral */
+@import './global.css';
+@import './header.css';
+@import './footer.css';
+
+/* home */
+@import './home/main.css';
+@import './home/treinos-home.css';
+@import './home/planos-home.css';

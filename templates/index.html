@@ -1,11 +1,156 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Document</title>
+   <title>Home - Fitness</title>
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="icon" href="./favicon.svg" type="img/svg+xml">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&family=IBM+Plex+Mono:wght@500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-   
+   <article class="main">
+      <header class="header">
+         <div><img src="./img/logo.svg" alt=""></div>
+         <nav>
+            <ul class="nav">
+               <li><a href="#">Planos</a></li>
+               <li><a href="#">Suporte</a></li>
+               <li><a href="#">Login</a></li>
+               <li><a href="#">Cadastro</a></li>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <h1 class="titulo-principal titulo">Atinja o físico<br> que sempre desejou</h1>
+         <a href="#">TREINAR</a>
+      </main>
+   </article>
+
+   <section class="treinos-home">
+      <div class="container-treino-form">
+         <h2 class="titulo">Monte seu treino.</h2>
+         <p>Tenha seu treino montado por profissionais capacitados.</p>
+         <form action="./">
+            <div>
+               <label for="objetivo">Objetivo</label>
+               <select name="objetivo" id="objetivo">
+                  <option value="Ganhar Massa">Ganhar massa</option>
+                  <option value="Perder peso">Perder peso</option>
+               </select>
+            </div>
+            <div>
+               <label for="frequencia">Frequência</label>
+               <input type="number" id="frequencia">
+            </div>
+            <button>MONTAR</button>
+         </form>
+      </div>
+      <div class="container-treino-painel">
+         <ul>
+            <li class="lista-treino">
+               <h3>Seg</h3>
+               <span>peito<br>tríceps</span>
+            </li>
+            <li>
+               <h3>Ter</h3>
+               <span>costas<br>bíceps</span>
+            </li>
+            <li>
+               <h3>Qua</h3>
+               <span>quadriceps<br>femoral</span>
+            </li>
+            <li>
+               <h3>Qui</h3>
+               <span>ombro<br>tríceps</span>
+            </li>
+            <li>
+               <h3>Sex</h3>
+               <span>bíceps<br>panturrilha</span>
+            </li>
+            <li>
+               <h3>Sab</h3>
+               <span>...</span>
+            </li>
+         </ul>
+      </div>
+   </section>
+
+   <section class=planos-home>
+      <h2 class="titulo">Planos</h2>
+      <a href="#">mais planos ></a>
+
+      <ul class="planos-lista">
+         <li class="planos-item">
+            <header class="planos-header">
+               <h3>MENSAL</h3>
+               <span>R$ 89,90</span>
+            </header>
+            <ul>
+               <li>30 dias de acesso</li>
+               <li>Suporte de um personal</li>
+               <li>Seu próprio treino</li>
+               <li>Acesso de segunda a sábado</li>
+            </ul>
+            <a href="#">INSCREVER-SE</a>
+         </li>
+         <li class="planos-item">
+            <header class="planos-header">
+               <h3>SEMESTRAL</h3>
+               <span>R$ 479,90</span>
+            </header>
+            <ul>
+               <li>6 meses de acesso</li>
+               <li>Suporte de um personal</li>
+               <li>Seu próprio treino</li>
+               <li>Acesso de segunda a sábado</li>
+            </ul>
+            <a href="#">INSCREVER-SE</a>
+         </li>
+         <li class="planos-item">
+            <header class="planos-header">
+               <h3>ANUAL</h3>
+               <span>R$ 799,90</span>
+            </header>
+            <ul>
+               <li>12 meses de acesso</li>
+               <li>Suporte de um personal</li>
+               <li>Seu próprio treino</li>
+               <li>Acesso de segunda a sábado</li>
+            </ul>
+            <a href="#">INSCREVER-SE</a>
+         </li>
+      </ul>
+   </section>
+
+   <footer class="footer">
+      <div class="footer-copyright">
+         <div><img src="./img/logo.svg" alt=""></div>
+         <p>Fitness © Todos os direitos reservados.</p>
+      </div>
+      <div class="footer-criadores">
+         <h3>Criadores</h3>
+         <ul>
+            <li>Matheus Teodoro Garcia</li>
+            <li>Valmir Paiva Stachin</li>
+            <li>Natália Campos Soares</li>
+            <li>Roberto Moriya Junior</li>
+            <li>Amanda Soares Vieira</li>
+         </ul>
+      </div>
+      <div class="footer-paginas">
+         <ul>
+            <li>Suporte</li>
+            <li>Planos</li>
+            <li>Treino</li>
+         </ul>
+      </div>
+   </footer>
 </body>
+
 </html>
