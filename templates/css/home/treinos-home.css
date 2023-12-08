@@ -1,0 +1,31 @@
+.treinos-home{
+    background-color: var(--cor01);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50vh;
+}
+
+.container-treino-form {
+    margin: 20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container-treino-form button{
+    background-color: var(--cor03);
+    color: var(--cor02);
+    border: none;
+    width: 80px;
+    height: 30px;
+    border-radius: 4px;    
+    margin: 20px;
+}
+
+.container-treino-painel{
+    background-color: var(--cor02);
+    color: var(--cor03);
+    margin: 20px 0x 20px 20px 
+}

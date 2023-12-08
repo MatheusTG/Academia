@@ -1,0 +1,67 @@
+.planos-home{
+    background-color: var(--cor06);
+    color: var(--cor01);
+    height: 50vh;
+
+}
+
+
+.planos-top{
+    display: flex;
+    align-items: center;
+}
+
+.planos-top h2 {
+    margin: 20px auto 20px 20px;
+    
+  }
+  
+.planos-lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin: 0px 30px;
+    gap: 30px;
+}
+
+.planos-lista li{
+    margin-bottom: 10px;
+}
+
+.planos-home a{
+    text-decoration: none;
+    justify-content: end;
+    color: var(--cor01);
+}
+
+.planos-item{
+    border: 0.5px solid var(--cor02);
+    padding: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.planos-item ul{
+    padding: 0;
+}
+
+.planos-item a{
+    text-align: left;
+    display: block;
+    margin-top: 10px;
+}
+
+.planos-item ul li {
+    margin-bottom: 10px; 
+  }
+
+.planos-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.planos button{
+    margin-left: 0;
+}
