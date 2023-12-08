@@ -5,3 +5,6 @@ from .grupo_muscular import GrupoMuscular
 from .grupo_treino_relacao import GrupoTreino
 from .exercicio import Exercicio
 from .series_repeticoes import SeriesRepeticoes
+from .franquia import Franquia
+from .cidade import Cidade
+from .financeiro import Financeiro
