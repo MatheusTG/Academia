@@ -1,8 +1,7 @@
 
 article > header{
     height: 8h;
-    background-color: rgb(110, 154, 207);
-
+border-bottom: 1px solid var(--cor05);
 
 }
 
@@ -26,8 +25,14 @@ header nav{
     text-decoration: none;
 }
 
+.main {
+    background-image: url("../../img/fundo-header.jpg") ;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
 main{
-    background-color: #808080;
     height: 50vh;
     color: var(--cor01);
     display: flex;

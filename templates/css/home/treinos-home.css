@@ -6,7 +6,15 @@
     height: 50vh;
 }
 
+.container-treino-form,
+.container-treino-painel {
+    box-sizing: border-box;
+    padding: 20px;}
+
 .container-treino-form {
+    display: flex;
+    justify-content: center;
+    width: 60%;
     margin: 20px;
     padding: 30px;
     display: flex;
@@ -27,5 +35,18 @@
 .container-treino-painel{
     background-color: var(--cor02);
     color: var(--cor03);
-    margin: 20px 0x 20px 20px 
+    margin: 20px 0x 20px 20px;
+    width: 40%;
+
 }
+
+.container-treino-painel ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 35px;
+    padding: 20px;
+}
+
+
+
