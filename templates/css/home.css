@@ -114,12 +114,13 @@
     content: '';
     position: absolute;
     height: 100%;
-    width: 1000px;
     z-index: -1;
     background-color: var(--cor06);
     border-radius: 40px 0 0 40px;
     top: 0px;
 }
+
+#home .container-treino-painel::before {width: 1000px;}
 
 .container-treino-painel li {
     display: grid;
