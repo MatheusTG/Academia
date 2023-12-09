@@ -1,6 +1,10 @@
-.body-planos{
+#planos{
     background-color: black;
     color: white;
+}
+
+#planos .main-container {
+    background-image: url('../../img/fundo-planos.jpg');
 }
 
 .planos{

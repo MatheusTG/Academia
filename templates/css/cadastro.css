@@ -1,6 +1,10 @@
-.body-cadastro{
+#cadastro{
     background-color: var(--cor02);
     color: var(--cor01);
+}
+
+#cadastro .main-container {
+    background-image: url('../img/fundo-cadastro.jpg');
 }
 
 .cadastro-container {

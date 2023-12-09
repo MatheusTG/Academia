@@ -1,13 +1,12 @@
-@import url(./style.css);
-
-#treinos-body {font-family: Barlow;}
-
-.main {
-    background-image: url("../img/fundo-header.jpg") ;
-    background-size: cover;
-    background-position: center; 
-    background-repeat: no-repeat;
+#treinos {
+    font-family: Barlow;
 }
+
+#treinos .main-container {
+    background-image: url('../img/fundo-treinos.jpg');
+}
+
+
 
 div.informacoes-usuario {
     color: white;
