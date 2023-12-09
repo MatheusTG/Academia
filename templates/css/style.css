@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /* Geral */
 @import './global.css';
 @import './header.css';
@@ -12,11 +11,13 @@
 /* Planos */
 @import './planos/planos.css';
 
-=======
 /* Geral */
 @import './global.css';
 @import './header.css';
 @import './footer.css';
+
+/* Cadastro */
+@import './cadastro.css'
 
 /* home */
 /* @import './home/main.css';
@@ -25,4 +26,4 @@
 
 /* treinos */
 /* @import './treinos/treinos.css' */
->>>>>>> 5276c477e3c6431bc08d3f5a405711a770aad47f
+
