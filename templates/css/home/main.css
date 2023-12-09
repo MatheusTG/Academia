@@ -1,30 +1,76 @@
 
 article > header{
-    height: 05%vh;
-    background-color: rgb(213, 41, 41);
-    display: flex;
-    flex-direction: row;
+    height: 8h;
+border-bottom: 1px solid var(--cor05);
+
 }
 
-header > nav{
+header nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav {
     display: flex;
     flex-direction: row;
+    list-style: none;
+    
+}
+
+.nav li{
+    margin: 10px 20px;
+}
+
+.nav a{
+    text-decoration: none;
+}
+
+.main {
+    background-image: url("../../img/fundo-header.jpg") ;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 main{
-    background-color: #808080;
+    height: 50vh;
+    color: var(--cor01);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
 }
 
-.treinos-home{
-    background-color: aquamarine;
+main a{
+    text-decoration: none;
+    color: var(--cor02);
+    background-color: var(--cor03);
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;    
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.planos-home{
-    background-color: violet;
+
+
+p{
+    color: var(--cor05);
 }
 
 footer{
-    background-color: brown;
+    background-color: var(--cor02);
+    color: var(--cor01);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center;
+}
+
+footer li{
+    color: var(--cor05);
 }
 
 img{

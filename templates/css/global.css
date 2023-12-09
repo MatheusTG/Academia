@@ -13,6 +13,8 @@ img {
   --cor03:#FBBA00;
   --cor04:#0B1DBA;
   --cor05:#808080;
-  --cor06:#111111;
 }
 
+ul{
+  list-style: none;
+}
