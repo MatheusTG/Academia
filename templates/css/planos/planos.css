@@ -1,0 +1,71 @@
+.body-planos{
+    background-color: black;
+    color: white;
+}
+
+.planos{
+    background-color: var(--cor06);
+    margin-left: 80px; ;
+    border-radius: 40px 0px 0px 40px;
+    padding:80px ;
+}
+.planos-topo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+   
+}
+.titulo-planos{
+    font-family: 'IBM Plex Mono';
+}
+.titulo-planos span{
+    color: var(--cor05);
+    font-size: 1.5rem;
+
+}
+.titulo-planos h2{
+    font-family: 'Barlow';
+    font-size: 4rem;
+}
+.planos-topo a{
+    font-family: 'IBM Plex Mono';
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.planos-lista{
+    display: flex;
+    gap: 40px;
+    
+
+}
+.planos-item{
+    padding: 40px;
+    background-color: var(--cor02);
+    border-radius: 8px;
+    
+}
+
+.planos-item h3{
+    font-size: 2rem;
+    font-family: 'Barlow';
+    font-weight: bold;
+    width: 400px;
+
+}
+.planos-header{
+    display: flex;
+    align-items: center;
+    margin-left: 12px;
+    border-bottom:2px solid white;
+    
+}
+.planos-header span{
+    font-family: 'Barlow';
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--cor05);
+    white-space: nowrap;
+}
