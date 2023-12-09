@@ -7,6 +7,7 @@
     background-image: url('../../img/fundo-planos.jpg');
 }
 
+
 .planos{
     background-color: var(--cor06);
     margin-left: 80px; ;
@@ -21,6 +22,7 @@
 }
 .titulo-planos{
     font-family: 'IBM Plex Mono';
+    
 }
 .titulo-planos span{
     color: var(--cor05);
@@ -30,6 +32,9 @@
 .titulo-planos h2{
     font-family: 'Barlow';
     font-size: 4rem;
+}
+.titulo{
+    color: white;
 }
 .planos-topo a{
     font-family: 'IBM Plex Mono';
@@ -72,4 +77,59 @@
     font-weight: bold;
     color: var(--cor05);
     white-space: nowrap;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px; 
+    text-decoration: none;
+    background-color:var(--cor10);
+    color:var(--cor01);
+    border-radius: 5px;
+    font-family: 'Barlow';
+    font-weight: bold;
+    font-size: 18px;
+  }
+  a.button-azul {
+    display: inline-block;
+    padding: 10px 20px; 
+    text-decoration: none;
+    background-color:var(--cor04);
+    color:var(--cor01);
+    border-radius: 5px;
+    font-family: 'Barlow';
+    font-weight: bold;
+    font-size: 18px;
+  }
+  a.button-am {
+    display: inline-block;
+    padding: 10px 20px; 
+    text-decoration: none;
+    background-color:var(--cor03);
+    color:var(--cor01);
+    border-radius: 5px;
+    font-family: 'Barlow';
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .planos-mensal .planos-header {
+    border-bottom: 2px solid var(--cor01); 
+}
+
+.planos-semestral .planos-header {
+    border-bottom: 2px solid var(--cor04); 
+}
+
+.planos-anual .planos-header {
+    border-bottom: 2px solid var(--cor03);
+}
+.footer-copyright{
+    font-size: 18px;
+}
+.footer-criadores h3{
+    font-family: 'Barlow';
+}
+.footer-paginas h3{
+    font-family: 'Barlow';
+    
 }
