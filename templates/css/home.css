@@ -1,5 +1,9 @@
-p{
-    color: var(--cor05);
+#home {
+    overflow-x: hidden;
+}
+
+#home .main-container {
+    margin-bottom: 120px;
 }
 
 .planos-home{
@@ -75,19 +79,13 @@ p{
     flex-direction: row;
     justify-content: center;
     height: 50vh;
+    margin-bottom: 120px;
 }
-
-.container-treino-form,
-.container-treino-painel {
-    box-sizing: border-box;
-    padding: 20px;}
 
 .container-treino-form {
     display: flex;
     justify-content: center;
     width: 60%;
-    margin: 20px;
-    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -103,17 +101,81 @@ p{
     margin: 20px;
 }
 
-.container-treino-painel{
-    background-color: var(--cor02);
-    color: var(--cor03);
-    margin: 20px 0x 20px 20px;
-    width: 40%;
-}
-
-.container-treino-painel ul{
+.container-treino-painel {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    gap: 35px;
-    padding: 20px;
+    gap: 32px 0;
+    position: relative;
+    z-index: 1;
+    padding: 60px 0 60px 40px;
+    border-radius: 40px 0 0 40px;
+}
+
+.container-treino-painel::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1000px;
+    z-index: -1;
+    background-color: var(--cor06);
+    border-radius: 40px 0 0 40px;
+}
+
+.container-treino-painel li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: var(--cor08);
+}
+
+.container-treino-painel li:nth-child(even) {
+    padding: 20px 40px;
+    border-radius: 0 10px 10px 0;
+}
+
+.container-treino-painel li:nth-child(odd) {
+    padding: 20px 40px 20px 20px;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+}
+
+.container-treino-painel li:nth-child(odd)::after {
+    content: '';
+    width: 2px;
+    height: calc(100% - 1.5rem);
+    background-color: var(--cor07);
+    position: absolute;
+    right: 0px;
+    top: .75rem;
+}
+
+.container-treino-painel li:hover {
+    background-color: var(--cor10);
+}
+
+.container-treino-painel h3 {
+    font-family: 'IBM Plex Mono';
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 80px;
+}
+
+.container-treino-painel h3::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 8px;
+    background-color: var(--cor03);
+}
+
+.container-treino-painel span {
+    font-family: 'IBM Plex Mono';
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--cor09);
+    text-align: center;
 }

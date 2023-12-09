@@ -11,10 +11,14 @@ img {
   --cor01: #FFFFFF;
   --cor02: #000000;
   --cor03: #FBBA00;
+  --cor11: rgba(251, 184, 0, 0.7);
   --cor04: #0B1DBA;
   --cor05: #808080;
   --cor06: #111111;
   --cor07: #E7E7E7;
+  --cor08: #222222;
+  --cor09: #6A6A6A;
+  --cor10: #303030;
 }
 
 ul{
@@ -23,7 +27,14 @@ ul{
 
 .container {
   box-sizing: border-box;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
+}
+
+.titulo {
+  font-family: 'Barlow';
+  font-size: 4rem;
+  font-weight: bold;
+  color: black;
 }

@@ -52,12 +52,6 @@ section.container-treino-geral {
     gap: 200px;
 }
 
-.container-treino-painel {
-    background-color: var(--cor06);
-    width: 480px;
-    height: 300px;
-}
-
 .especificacoes-treino {
     color: white;
 }

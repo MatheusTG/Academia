@@ -18,12 +18,16 @@
   padding: 40px 20px;
 }
 
+.logo img {
+  width: 120px;
+}
+
 .main-content {
   grid-column: 2;;
 }
 
 .main {
-  padding: 120px 0;
+  padding: 120px 20px;
 }
 
 .nav {
@@ -33,16 +37,17 @@
 
 .nav a {
   font-family: 'Barlow';
-  font-size: 1.125rem;
-  font-weight: bold;
+  font-size: 1.25rem;
+  font-weight: normal;
   color: white;
   text-decoration: none;
 }
 
-.titulo {
-  font-family: 'Barlow';
-  font-size: 4rem;
-  font-weight: bold;
+.nav a:hover {
+  color: var(--cor03);
+}
+
+.titulo-principal {
   color: white;
 }
 
@@ -59,5 +64,10 @@
   text-decoration: none;
   background-color: var(--cor03);
   padding: 16px 40px;
+  border: 2px solid var(--cor03);
   border-radius: 8px;
+}
+
+.button-main:hover {
+  background-color: var(--cor11);
 }
