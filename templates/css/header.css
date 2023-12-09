@@ -1,0 +1,25 @@
+article > header{
+   height: 8h;
+border-bottom: 1px solid var(--cor05);
+
+}
+
+header nav{
+   display: flex;
+   justify-content: flex-end;
+}
+
+.nav {
+   display: flex;
+   flex-direction: row;
+   list-style: none;
+   
+}
+
+.nav li{
+   margin: 10px 20px;
+}
+
+.nav a{
+   text-decoration: none;
+}

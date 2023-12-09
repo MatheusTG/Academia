@@ -1,0 +1,64 @@
+@import url(./style.css);
+
+#treinos-body {font-family: Barlow;}
+
+.main {
+    background-image: url("../img/fundo-header.jpg") ;
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+div.informacoes-usuario {
+    color: white;
+    background-color: var(--cor02);
+    font-size: 24px;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: start;
+}
+
+div.informacoes-usuario span {
+    color: var(--cor06);
+    font-family: IBM Plex Mono;
+    font-size: 12px;
+}
+
+#nome-usuario {
+    background-color: #111;
+    padding: 0.5rem 1.5rem;
+    border-radius: 8px;
+    font-size: 32px;
+}
+
+main#main-treino {
+    margin-bottom: 120px;
+}
+section.container-treino-geral {
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: end;
+}
+
+.container-treino {
+    background-color: #111;
+    width: 1200px;
+    height: 340px;
+    padding: 100px 120px;
+    border-radius: 40px 0 0 40px;
+    display: flex;
+    gap: 200px;
+}
+
+.container-treino-painel {
+    background-color: var(--cor06);
+    width: 480px;
+    height: 300px;
+}
+
+.especificacoes-treino {
+    color: white;
+}
