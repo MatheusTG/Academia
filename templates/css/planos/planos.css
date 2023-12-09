@@ -1,18 +1,18 @@
 #planos{
-    background-color: black;
-    color: white;
+    background-color: var(--cor02);
+    color:var(--cor01);
 }
 
 #planos .main-container {
     background-image: url('../../img/fundo-planos.jpg');
 }
 
-
 .planos{
     background-color: var(--cor06);
     margin-left: 80px; ;
     border-radius: 40px 0px 0px 40px;
     padding:80px ;
+    
 }
 .planos-topo {
     display: flex;
@@ -43,33 +43,26 @@
     text-decoration: none;
     font-weight: 500;
 }
-
 .planos-lista{
     display: flex;
     gap: 40px;
-    
-
 }
 .planos-item{
     padding: 40px;
     background-color: var(--cor02);
-    border-radius: 8px;
-    
+    border-radius: 8px;   
 }
-
 .planos-item h3{
     font-size: 2rem;
     font-family: 'Barlow';
     font-weight: bold;
     width: 400px;
-
 }
 .planos-header{
     display: flex;
     align-items: center;
     margin-left: 12px;
-    border-bottom:2px solid white;
-    
+    border-bottom:2px solid var(--cor01);
 }
 .planos-header span{
     font-family: 'Barlow';
@@ -78,7 +71,6 @@
     color: var(--cor05);
     white-space: nowrap;
 }
-
 a.button {
     display: inline-block;
     padding: 10px 20px; 
@@ -106,7 +98,7 @@ a.button {
     padding: 10px 20px; 
     text-decoration: none;
     background-color:var(--cor03);
-    color:var(--cor01);
+    color:var(--cor02);
     border-radius: 5px;
     font-family: 'Barlow';
     font-weight: bold;
@@ -130,6 +122,5 @@ a.button {
     font-family: 'Barlow';
 }
 .footer-paginas h3{
-    font-family: 'Barlow';
-    
+    font-family: 'Barlow'; 
 }
