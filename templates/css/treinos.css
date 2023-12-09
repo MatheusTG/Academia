@@ -93,3 +93,74 @@ section.container-treino-geral {
 .especificacoes-table td {
     padding: 1rem 3rem;
 }
+
+/* ----------------------------- */
+
+.container-solicitar-treino {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 5%;
+}
+
+#form-div h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+#form-div p {
+    color: var(--cor05);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.form-solicitar-treino {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.form-solicitar-treino .input-box {
+    font-family: IBM Plex Mono;
+    font-weight: 800;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-solicitar-treino .select {
+    background-color: var(--cor07);
+    background-image: url(../img/select_arrow.svg);
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: 98% center;
+    padding: 0.8rem 0.5rem;
+    font-size: 1.2rem;
+    border: 0;
+    border-radius: 4px;
+    appearance: none;
+}
+
+.form-solicitar-treino .select:hover {
+    background-color: #e7e7e7a1;
+    transition: 0.1s;
+}
+
+.form-solicitar-treino button {
+    background-color: var(--cor03);
+    width: fit-content;
+    font-weight: 800;
+    padding: 0.8rem 2rem;
+    text-align: center;
+    font-size: 24px;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form-solicitar-treino button:hover {
+    background-color: var(--cor11);
+    transition: 0.1s;
+}

@@ -113,36 +113,39 @@
                 </table>
             </div>
         </div>
-    </section>`
+    </section>
 
     <section class="container-solicitar-treino">
-        <h1>Solicitar novo treino.</h1>
-        
-        <form action="" class="solicitar_treino">
+        <div id="form-div">
+            <h1>Solicitar novo treino.</h1>
             <p>Tenha seu treino montado por profissionais capacitados.</p>
-            <div class="input-box">
-                <label for="objetivo-select">Objetivo</label>
-                <select name="" id="objetivo-select">
-                    <option value="">Objetivo 1</option>
-                    <option value="">Objetivo 2</option>
-                    <option value="">Objetivo 3</option>
-                </select>
-            </div>
-            <div class="input-box">
-                <label for="frequencia-select">Objetivo</label>
-                <select name="" id="frequencia-select">
-                    <option value="1">1 dia por semana</option>
-                    <option value="2">2 dias por semana</option>
-                    <option value="3">3 dias por semana</option>
-                    <option value="4">4 dias por semana</option>
-                    <option value="5">5 dias por semana</option>
-                    <option value="6">6 dias por semana</option>
-                    <option value="7">7 dias por semana</option>
-                </select>
-            </div>
-            <button>SOLICITAR</button>
-        </form>
-        <img src="./img/bodybuilder.jpg" alt="">
+            <form action="" class="form-solicitar-treino">
+                <div class="input-box">
+                    <label for="objetivo-select">Objetivo</label>
+                    <select name="" id="objetivo-select" class="select">
+                        <option value="Null"></option>
+                        <option value="">Objetivo 1</option>
+                        <option value="">Objetivo 2</option>
+                        <option value="">Objetivo 3</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="frequencia-select">Frequência</label>
+                    <select name="" id="frequencia-select" class="select">
+                        <option value="Null"></option>
+                        <option value="1">1 dia por semana</option>
+                        <option value="2">2 dias por semana</option>
+                        <option value="3">3 dias por semana</option>
+                        <option value="4">4 dias por semana</option>
+                        <option value="5">5 dias por semana</option>
+                        <option value="6">6 dias por semana</option>
+                        <option value="7">7 dias por semana</option>
+                    </select>
+                </div>
+                <button>SOLICITAR</button>
+            </form>
+        </div>
+        <div id="bodybuilder-div"><img src="./img/bodybuilder.jpg" alt=""></div>
     </section>
 
    <footer class="footer">
