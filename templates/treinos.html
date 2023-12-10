@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinos - (user)</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="icon" href="./favicon.svg" type="img/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,11 +18,11 @@
         <div class="main-content">
             <header class="header">
                 <div class="header-content container">
-                    <a href="index.html" class="logo"><img src="./img/logo.svg" alt=""></a>
+                    <a href="/" class="logo"><img src="{{ url_for('static', filename='img/logo.svg') }}" alt=""></a>
                     <nav>
                         <ul class="nav">
                             <li><a href="planos.html">Planos</a></li>
-                            <li><a href="#">Suporte</a></li>
+                            <li><a href="#">Meu treino</a></li>
                             <li><a href="cadastro.html">Login</a></li>
                             <li><a href="cadastro.html">Cadastro</a></li>
                         </ul>
@@ -145,13 +145,13 @@
                 <button>SOLICITAR</button>
             </form>
         </div>
-        <div id="bodybuilder-div"><img src="./img/bodybuilder.jpg" alt=""></div>
+        <div id="bodybuilder-div"><img src="{{ url_for('static', filename='img/bodybuilder.jpg') }}" alt=""></div>
     </section>
 
     <footer class="footer">
         <div class="footer-content container">
             <div class="footer-copyright">
-                <a href="index.html" class="footer-logo"><img src="./img/logo.svg" alt=""></a>
+                <a href="index.html" class="footer-logo"><img src="{{ url_for('static', filename='img/logo.svg') }}" alt=""></a>
                 <p>Fitness © Todos os direitos<br>reservados.</p>
             </div>
             <div class="footer-criadores">

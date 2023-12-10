@@ -8,23 +8,27 @@ from infra.configs.connection import DBConnectionHandler
 import infra.entities # Carrega as classes
 from infra.entities import *
 
-from infra.entities.cliente import Cliente
+from flask import Flask, render_template
 
 db = DBConnectionHandler()
 
-repo_cliente = CLienteRepository()
+app = Flask(__name__)
 
-repo_plano = PlanoRepository()
+@app.route('/')
+def home():
+  return render_template('index.html')
 
-# repo_plano.insert(
-#   plano_id=2,
-#   duracao=6,
-#   preco='R$ 89,90',
-#   nome='Semestral'
-# )
+@app.route('/planos.html')
+def planos():
+  return render_template('planos.html')
 
-# repo_plano.delete(plano.Plano.plano_id, '2')
-repo_plano.update(plano.Plano.plano_id, '2', {'nome': 'Matheus', 'duracao': 2})
+@app.route('/cadastro.html')
+def cadastro():
+  return render_template('cadastro.html')
 
-print(repo_plano.select())
- 
+@app.route('/treinos.html')
+def treinos():
+  return render_template('treinos.html')
+
+if __name__ == '__main__':
+  app.run(debug=True)

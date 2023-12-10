@@ -5,7 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Home - Fitness</title>
-   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
    <link rel="icon" href="./favicon.svg" type="img/svg+xml">
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,11 +18,11 @@
       <div class="main-content">
          <header class="header">
             <div class="header-content container">
-               <a href="#" class="logo"><img src="./img/logo.svg" alt=""></a>
+               <a href="#" class="logo"><img src="{{ url_for('static', filename='img/logo.svg') }}" alt=""></a>
                <nav>
                   <ul class="nav">
                      <li><a href="planos.html">Planos</a></li>
-                     <li><a href="#">Suporte</a></li>
+                     <li><a href="treinos.html">Meu treino</a></li>
                      <li><a href="cadastro.html">Login</a></li>
                      <li><a href="cadastro.html">Cadastro</a></li>
                   </ul>
@@ -40,7 +40,7 @@
       <div class="container-treino-form">
          <h2 class="titulo">Monte seu treino.</h2>
          <p>Tenha seu treino montado por profissionais capacitados.</p>
-         <form action="./">
+         <form action="./" method="GET">
             <div>
                <label for="objetivo">Objetivo</label>
                <select name="objetivo" id="objetivo">

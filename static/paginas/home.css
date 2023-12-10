@@ -1,3 +1,7 @@
+#home .main-container {
+    background-image: url('../img/fundo-header.jpg');
+  }
+
 #home {
     overflow-x: hidden;
 }
