@@ -8,24 +8,23 @@
     background-image: url('../img/fundo-cadastro.jpg');
 }
 
-.cadastro-container {
+.cadastro-container, 
+.login-container {
     display: grid;
     grid-template-columns: 1fr 3fr;
     margin-bottom: 80px;
 }
 
-.login-container {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-}
 
-.cadastro-content{
+.cadastro-content,
+.login-content{
     grid-column: 2; 
     padding: 80px 0 80px 80px;
     position: relative;
 }
 
-.cadastro-content::before {
+.cadastro-content::before,
+.login-content::before {
     content: '';
     display: block;
     position: absolute;
@@ -38,13 +37,6 @@
     left: 0;
 }
 
-.login-content{
-    grid-column: 2; 
-    padding: 80px;
-    background-color: var(--cor06);
-    border-radius: 40px 0 0 40px;
-}
-
 .cadastro-container h2{
     font-size: 2rem;
     font-family: "Barlow";
@@ -52,10 +44,8 @@
     margin-bottom: 40px;
 }
 
-.login-container h2{
-    font-size: 2rem;
-    font-family: "Barlow";
-    align-self: flex-start;
+.form-login .form-container > div{
+    grid-column: span 2;
 }
 
 .form-container{
@@ -94,4 +84,8 @@
     font-size: 1.5rem !important;
     font-weight: bold;
     font-size: medium;
+}
+
+#email::placeholder{
+    color: red
 }
