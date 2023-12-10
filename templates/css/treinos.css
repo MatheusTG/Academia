@@ -164,3 +164,7 @@ section.container-treino-geral {
     background-color: var(--cor11);
     transition: 0.1s;
 }
+
+#bodybuilder-div img {
+    display: block;
+}

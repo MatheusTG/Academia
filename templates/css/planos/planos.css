@@ -115,12 +115,3 @@ a.button {
 .planos-anual .planos-header {
     border-bottom: 2px solid var(--cor03);
 }
-.footer-copyright{
-    font-size: 18px;
-}
-.footer-criadores h3{
-    font-family: 'Barlow';
-}
-.footer-paginas h3{
-    font-family: 'Barlow'; 
-}
