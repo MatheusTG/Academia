@@ -1,6 +1,6 @@
 from infra.configs.connection import DBConnectionHandler
 
-class RepositoryToll:
+class RepositoryTool:
   def __init__(self, table):
     self.table = table
 

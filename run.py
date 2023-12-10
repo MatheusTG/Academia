@@ -16,13 +16,15 @@ repo_cliente = CLienteRepository()
 
 repo_plano = PlanoRepository()
 
-repo_plano.insert(
-  plano_id=2,
-  duracao=6,
-  preco='R$ 89,90',
-  nome='Semestral'
-)
+# repo_plano.insert(
+#   plano_id=2,
+#   duracao=6,
+#   preco='R$ 89,90',
+#   nome='Semestral'
+# )
 
 # repo_plano.delete(plano.Plano.plano_id, '2')
-repo_plano.update(plano.Plano.plano_id, '2', {'nome': 'Valmir', 'duracao': 1})
+repo_plano.update(plano.Plano.plano_id, '2', {'nome': 'Matheus', 'duracao': 2})
+
+print(repo_plano.select())
  
