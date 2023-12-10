@@ -16,4 +16,3 @@ class Plano(Base):
       Preço {self.preco}
       Nome {self.nome}
     '''
-

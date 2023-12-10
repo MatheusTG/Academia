@@ -15,4 +15,14 @@ class Cliente(Base):
     treino_id = Column(Integer, ForeignKey('treino.treino_id'))
 
     def __repr__(self):
-        return f"{self.__tablename__}({self.cpf})"
+        return f''' 
+        CPF {self.cpf}
+        Nome {self.nome}
+        Sobrenome {self.sobrenome}
+        Telefone {self.telefone}
+        Data de Nascimento {self.data_nasc}
+        Peso {self.peso}
+        plano_id {self.plano_id}
+        franquia_id {self.franquia_id}
+        treino_id {self.treino_id}
+        '''

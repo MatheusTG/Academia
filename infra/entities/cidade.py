@@ -10,5 +10,9 @@ class Cidade(Base):
   estado = Column(String, nullable=False)
   
   def __repr__(self):
-    return (self.__tablename__)
-  
+    return f''' 
+      cidade_id {self.cidade_id}
+      Nome da Cidade {self.nome}
+      População {self.populacao}
+      Estado {self.estado}
+    '''

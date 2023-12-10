@@ -9,5 +9,8 @@ class Treino(Base):
   objetivo = Column(String, nullable=False)
 
   def __repr__(self):
-    return f'Treino (id_treino={self.treino_id}, frequencia={self.frequencia}, objetivo={self.objetivo})'
-
+    return f''' 
+      treino_id {self.treino_id}
+      Frequência {self.frequencia}
+      Objetivo {self.objetivo}
+    '''

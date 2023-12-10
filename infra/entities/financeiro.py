@@ -9,4 +9,8 @@ class Financeiro(Base):
   gasto_ultimo_mes = Column(Integer, nullable=False)
   
   def __repr__(self):
-    return (self.__tablename__)
+    return f''' 
+      financeiro_id {self.financeiro_id}
+      Ganho Último Mês {self.ganho_ultimo_mes}
+      Gasto Último Mês {self.gasto_ultimo_mes}
+    '''

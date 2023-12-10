@@ -8,5 +8,7 @@ class TreinoRelacao(Base):
   treino_diario_id = Column(Integer, ForeignKey('treino_diario.treino_diario_id'), primary_key=True)
 
   def __repr__(self):
-    return (self.__tablename__)
-
+    return f''' 
+      treino_id {self.treino_id}
+      treino_diario_id {self.treino_diario_id}
+    '''

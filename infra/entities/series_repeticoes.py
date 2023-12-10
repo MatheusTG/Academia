@@ -10,4 +10,9 @@ class SeriesRepeticoes(Base):
   repeticoes = Column(Integer, nullable=False)
 
   def __repr__(self):
-    return (self.__tablename__)
+    return f''' 
+      grupo_treino_id {self.grupo_treino_id}
+      exercicio_id {self.exercicio_id}
+      Series {self.series}
+      Repetições {self.repeticoes}
+    '''

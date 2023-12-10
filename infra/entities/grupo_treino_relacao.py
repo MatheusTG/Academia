@@ -9,4 +9,8 @@ class GrupoTreino(Base):
   grupo_muscular_id = Column(Integer, ForeignKey('grupo_muscular.grupo_muscular_id'))
 
   def __repr__(self):
-    return (self.__tablename__)
+    return f''' 
+      grupo_treino_id {self.grupo_treino_id}
+      treino_diario_id {self.treino_diario_id}
+      grupo_muscular_id {self.grupo_muscular_id}
+    '''

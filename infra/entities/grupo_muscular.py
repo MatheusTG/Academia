@@ -9,5 +9,8 @@ class GrupoMuscular(Base):
   categoria = Column(String, nullable=False)
 
   def __repr__(self):
-    return (self.__tablename__)
-
+    return f''' 
+      grupo_muscular_id {self.grupo_muscular_id}
+      Nome do Músculo {self.nome}
+      Categoria {self.categoria}
+    '''

@@ -14,4 +14,13 @@ class Franquia(Base):
   financeiro_id = Column(Integer, ForeignKey('financeiro.financeiro_id'))
   
   def __repr__(self):
-    return (self.__tablename__)
+    return f''' 
+      franquia_id {self.franquia_id}
+      cidade_id {self.cidade_id}
+      Proprietário {self.proprietario}
+      Telefone {self.telefone}
+      Bairro {self.bairro}
+      Rua {self.rua}
+      Número {self.numero}
+      financeiro_id {self.financeiro_id}
+    '''

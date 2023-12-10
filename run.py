@@ -1,4 +1,4 @@
-from infra.repository.treinos_repository import TreinosRepository
+from infra.repository.treino_repository import TreinoRepository
 from infra.repository.clientes_repository import CLienteRepository
 from infra.repository.plano_repository import PlanoRepository
 

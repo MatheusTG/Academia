@@ -9,4 +9,7 @@ class TreinoDiario(Base):
   cardio = Column(Boolean)
 
   def __repr__(self):
-    return (self.__tablename__)
+    return f''' 
+      treino_diario_id {self.treino_diario_id}
+      Cardio {self.cardio}
+    '''
