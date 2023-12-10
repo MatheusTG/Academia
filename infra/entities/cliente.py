@@ -8,7 +8,7 @@ class Cliente(Base):
     nome = Column(String, nullable=False)
     sobrenome = Column(String, nullable=False)
     telefone = Column(String, nullable=False)
-    datanac = Column(Date, nullable=False)
+    data_nasc = Column(Date, nullable=False)
     peso = Column(Numeric, nullable=False)
     plano_id = Column(Integer, ForeignKey('plano.plano_id'))
     franquia_id = Column(Integer, ForeignKey('franquia.franquia_id'))

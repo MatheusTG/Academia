@@ -1,4 +1,4 @@
-from .treinos import Treinos
+from .treino import Treino
 from .treino_diario import TreinoDiario
 from .treino_relacao import TreinoRelacao
 from .grupo_muscular import GrupoMuscular
@@ -8,3 +8,5 @@ from .series_repeticoes import SeriesRepeticoes
 from .franquia import Franquia
 from .cidade import Cidade
 from .financeiro import Financeiro
+from .plano import Plano
+from .cliente import Cliente

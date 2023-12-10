@@ -1,8 +1,8 @@
 from infra.configs.base import Base
 from sqlalchemy import Column, String, Integer
 
-class Treinos(Base):
-  __tablename__ = 'treinos'
+class Treino(Base):
+  __tablename__ = 'treino'
 
   treino_id = Column(Integer, primary_key=True)
   frequencia = Column(Integer, nullable=False)

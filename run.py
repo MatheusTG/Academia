@@ -1,17 +1,28 @@
 from infra.repository.treinos_repository import TreinosRepository
+from infra.repository.clientes_repository import CLienteRepository
+from infra.repository.plano_repository import PlanoRepository
+
 from infra.configs.base import Base
 from infra.configs.connection import DBConnectionHandler
-import infra.entities
+
+import infra.entities # Carrega as classes
+from infra.entities import *
+
+from infra.entities.cliente import Cliente
 
 db = DBConnectionHandler()
 
-# repo.insert(1, 3, 'Ganhar massa')
-# repo.insert(2, 4, 'Perder peso')
+repo_cliente = CLienteRepository()
 
-# data = repo.select()
-  
-# print(data)
+repo_plano = PlanoRepository()
 
-#oi amgos estou aq
+repo_plano.insert(
+  plano_id=2,
+  duracao=6,
+  preco='R$ 89,90',
+  nome='Semestral'
+)
 
-# estou tambem
+# repo_plano.delete(plano.Plano.plano_id, '2')
+repo_plano.update(plano.Plano.plano_id, '2', {'nome': 'Valmir', 'duracao': 1})
+ 
