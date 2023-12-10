@@ -1,0 +1,22 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+img {
+  max-width: 100%;
+}
+
+:root {
+  --cor01: #FFFFFF;
+  --cor02: #000000;
+  --cor03: #FBBA00;
+  --cor04: #0B1DBA;
+  --cor05: #808080;
+  --cor06: #111111;
+  --cor07: #E7E7E7;
+}
+
+ul{
+  list-style: none;
+}
