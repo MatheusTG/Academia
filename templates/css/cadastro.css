@@ -37,9 +37,9 @@
     left: 0;
 }
 
-.cadastro-container h2{
+.cadastro-container h2, .login-container h2{
     font-size: 2rem;
-    font-family: "Barlow";
+    font-family: 'Barlow';
     align-self: flex-start;
     margin-bottom: 40px;
 }
@@ -86,6 +86,9 @@
     font-size: medium;
 }
 
-#email::placeholder{
-    color: red
+#email::placeholder,
+#telefone::placeholder{
+    padding: 10px;
+    font-family: 'IBM FLex Mono';
+    font-size: 150%
 }
