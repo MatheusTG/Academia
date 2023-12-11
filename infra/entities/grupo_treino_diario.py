@@ -1,8 +1,8 @@
 from infra.configs.base import Base
 from sqlalchemy import Column, String, Integer, ForeignKey
 
-class GrupoTreino(Base):
-  __tablename__ = 'grupo_treino'
+class GrupoTreinoDiario(Base):
+  __tablename__ = 'grupo_treino_diario'
 
   grupo_treino_id = Column(Integer, primary_key=True)
   treino_diario_id = Column(Integer, ForeignKey('treino_diario.treino_diario_id'))

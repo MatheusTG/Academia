@@ -87,6 +87,13 @@
     font-size: 1.5rem !important;
     font-weight: bold;
     font-size: medium;
+    border: 2px solid var(--cor03);
+}
+
+.enviar:hover {
+    background-color: transparent;
+    border: 2px solid var(--cor03);
+    color: white;
 }
 
 #email::placeholder,
