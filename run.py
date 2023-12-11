@@ -8,14 +8,17 @@ from infra.configs.connection import DBConnectionHandler
 import infra.entities # Carrega as classes
 from infra.entities import *
 
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 db = DBConnectionHandler()
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def home():
+  if request.method == 'GET':
+    user = request.args.get('frequencia')
+    print(user)
   return render_template('index.html')
 
 @app.route('/planos.html')

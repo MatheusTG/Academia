@@ -1,5 +1,6 @@
 from infra.configs.base import Base
 from sqlalchemy import Column, String, Integer
+from sqlalchemy.orm import relationship
 
 class Treino(Base):
   __tablename__ = 'treino'
@@ -7,6 +8,7 @@ class Treino(Base):
   treino_id = Column(Integer, primary_key=True)
   frequencia = Column(Integer, nullable=False)
   objetivo = Column(String, nullable=False)
+  # treino_diario = relationship('TreinoDiario', backref='treino_diario', lazy='subquery')
 
   def __repr__(self):
     return f''' 

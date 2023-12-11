@@ -24,9 +24,9 @@
                     <nav>
                         <ul class="nav">
                             <li><a href="planos.html">Planos</a></li>
-                            <li><a href="#">Meu treino</a></li>
-                            <li><a href="cadastro.html">Login</a></li>
-                            <li><a href="cadastro.html">Cadastro</a></li>
+                            <li><a href="#">Meu treino</a   ></li>
+                            <li id="js-link-login"><a href="cadastro.html">Login</a></li>
+                            <li id="js-link-cadastro"><a href="cadastro.html">Cadastro</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -176,6 +176,8 @@
             </div>
         </div>
     </footer>
+
+   <script src="{{ url_for('static', filename='js/registro.js') }}"></script>
 </body>
 
 </html>

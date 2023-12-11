@@ -24,8 +24,8 @@
                   <ul class="nav">
                      <li><a href="planos.html">Planos</a></li>
                      <li><a href="treinos.html">Meu treino</a></li>
-                     <li><a href="cadastro.html">Login</a></li>
-                     <li><a href="cadastro.html">Cadastro</a></li>
+                     <li id="js-link-login" onclick="loginActive()"><a href="cadastro.html">Login</a></li>
+                     <li id="js-link-cadastro" onclick="cadastroActive()"><a href="cadastro.html">Cadastro</a></li>
                   </ul>
                </nav>
             </div>
@@ -51,7 +51,7 @@
             </div>
             <div>
                <label for="frequencia">Frequência</label>
-               <input type="number" id="frequencia">
+               <input type="number" id="frequencia" name="frequencia">
             </div>
             <button>MONTAR</button>
          </form>
@@ -136,7 +136,7 @@
    <footer class="footer">
       <div class="footer-content container">
          <div class="footer-copyright">
-            <a href="index.html" class="footer-logo"><img src="./img/logo.svg" alt=""></a>
+            <a href="index.html" class="footer-logo"><img src="{{ url_for('static', filename='img/logo.svg') }}" alt=""></a>
             <p>Fitness © Todos os direitos<br>reservados.</p>
          </div>
          <div class="footer-criadores">
@@ -159,6 +159,8 @@
          </div>
       </div>
    </footer>
+
+   <script src="{{ url_for('static', filename='js/registro.js') }}"></script>
 </body>
 
 </html>

@@ -24,8 +24,8 @@
                   <ul class="nav">
                      <li><a href="planos.html">Planos</a></li>
                      <li><a href="treinos.html">Meu treino</a></li>
-                     <li><a href="cadastro.html">Login</a></li>
-                     <li><a href="#">Cadastro</a></li>
+                     <li id="js-link-login"><a href="#">Login</a></li>
+                     <li id="js-link-cadastro"><a href="#">Cadastro</a></li>
                   </ul>
                </nav>
             </div>
@@ -52,7 +52,7 @@
                   </div>
                   <div>
                      <label for="email">E-mail</label>
-                     <input type="email" id="email" placeholder="contato@email.com"/>
+                     <input type="email" id="email-cadastro" placeholder="contato@email.com"/>
                   </div>
                   <div>
                      <label for="cpf">CPF</label>
@@ -60,7 +60,7 @@
                   </div>
                   <div>
                      <label for="senha">Senha</label>
-                     <input type="password" id="senha"/>
+                     <input type="password" id="senha-cadastro"/>
                   </div>
                   <div>
                      <label for="telefone">Telefone</label>
@@ -88,7 +88,7 @@
                <div class="form-container">
                   <div>
                      <label for="email">E-mail</label>
-                     <input type="email" id="email"/>
+                     <input type="email-login" id="email-login"/>
                   </div>
                   <div>
                      <label for="senha">Senha</label>
@@ -127,6 +127,8 @@
          </div>
       </div>
    </footer>
+
+   <script src="{{ url_for('static', filename='js/registro.js') }}"></script> 
 </body>
 
 </html>

@@ -24,3 +24,4 @@ class RepositoryTool:
     with DBConnectionHandler() as db:
       db.session.query(self.table).filter(attribute==value).update(change)
       db.session.commit()
+  
