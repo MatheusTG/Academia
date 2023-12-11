@@ -22,5 +22,10 @@ function cadastroActive() {
   })
 }
 
+function criarURL() {
+  form = document.querySelector('#cadastro .form-cadastro')
+}
+
 loginActive()
 cadastroActive()
+criarURL()

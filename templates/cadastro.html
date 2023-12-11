@@ -40,42 +40,42 @@
       <div class="cadastro-content" >
          <h2>Cadastro</h2>
          <button></button>
-         <form action="./" method="GET" class="form-cadastro">
-               <div class="form-container">
-                  <div>
-                     <label for="nome">Nome</label>
-                     <input type="text" id="nome"/>
-                  </div>
-                  <div>
-                     <label for="sobrenome">Sobrenome</label>
-                     <input type="text" id="sobrenome"/>
-                  </div>
-                  <div>
-                     <label for="email">E-mail</label>
-                     <input type="email" id="email-cadastro" placeholder="contato@email.com"/>
-                  </div>
-                  <div>
-                     <label for="cpf">CPF</label>
-                     <input type="text" id="cpf"/>
-                  </div>
-                  <div>
-                     <label for="senha">Senha</label>
-                     <input type="password" id="senha-cadastro"/>
-                  </div>
-                  <div>
-                     <label for="telefone">Telefone</label>
-                     <input type="tel" id="telefone" placeholder="(44) 99912-3456"/>
-                  </div>
-                  <div>
-                     <label for="data-nasc">Data de nascimento</label>
-                     <input type="date" id="data-nasc"/>
-                  </div>
-                  <div>
-                     <label for="peso">Peso</label>
-                     <input type="number" id="peso"/>
-                  </div>
+         <form action="./cadastro.html?" method="GET" class="form-cadastro">
+            <div class="form-container">
+               <div>
+                  <label for="nome">Nome</label>
+                  <input type="text" id="nome" name="nome"/>
                </div>
-               <button class="enviar">ENVIAR</button>
+               <div>
+                  <label for="sobrenome">Sobrenome</label>
+                  <input type="text" id="sobrenome" name="sobrenome"/>
+               </div>
+               <div>
+                  <label for="email">E-mail</label>
+                  <input type="email" id="email-cadastro" name="email" placeholder="contato@email.com"/>
+               </div>
+               <div>
+                  <label for="cpf">CPF</label>
+                  <input type="text" id="cpf" name="cpf"/>
+               </div>
+               <div>
+                  <label for="senha">Senha</label>
+                  <input type="password" id="senha-cadastro" name="senha"/>
+               </div>
+               <div>
+                  <label for="telefone">Telefone</label>
+                  <input type="text" id="telefone" name="telefone" placeholder="(44) 99912-3456"/>
+               </div>
+               <div>
+                  <label for="data-nasc">Data de nascimento</label>
+                  <input type="text" id="data-nasc" name="data-nasc"/>
+               </div>
+               <div>
+                  <label for="peso">Peso</label>
+                  <input type="number" id="peso" name="peso"/>
+               </div>
+            </div>
+            <button class="enviar">ENVIAR</button>
          </form>
       </div>
    </section>
@@ -84,15 +84,15 @@
       <div class="login-content">
          <h2>Login</h2>
          <button></button>
-         <form action="./" class="form-login">
+         <form action="/cadastro.html" class="form-login">
                <div class="form-container">
                   <div>
                      <label for="email">E-mail</label>
-                     <input type="email-login" id="email-login"/>
+                     <input type="email-login" id="email-login" name="email"/>
                   </div>
                   <div>
                      <label for="senha">Senha</label>
-                     <input type="password" id="senha"/>
+                     <input type="password" id="senha" name="senha"/>
                   </div>
                </div>
                <button class="enviar">ENVIAR</button>
