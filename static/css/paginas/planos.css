@@ -4,7 +4,7 @@
 }
 
 #planos .main-container {
-    background-image: url('../img/fundo-planos.jpg');
+    background-image: url('../../img/fundo-planos.jpg');
 }
 
 .planos{
@@ -33,7 +33,7 @@
     font-family: 'Barlow';
     font-size: 4rem;
 }
-.titulo{
+.titulo-planos .titulo{
     color: white;
 }
 .planos-topo a{

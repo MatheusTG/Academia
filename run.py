@@ -58,6 +58,10 @@ def cadastro():
     )
   return render_template('cadastro.html')
 
+@app.route('/login.html', methods=['GET', 'POST'])
+def login():
+  return render_template('login.html')
+
 @app.route('/treinos.html')
 def treinos():
   return render_template('treinos.html')

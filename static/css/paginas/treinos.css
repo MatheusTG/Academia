@@ -3,7 +3,7 @@
 }
 
 #treinos .main-container {
-    background-image: url('../img/fundo-treinos.jpg');
+    background-image: url('../../img/fundo-treinos.jpg');
     border-bottom: 1px solid var(--cor01);
 }
 

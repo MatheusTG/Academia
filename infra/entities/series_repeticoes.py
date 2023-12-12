@@ -4,7 +4,7 @@ from sqlalchemy import Column, String, Integer, ForeignKey
 class SeriesRepeticoes(Base):
   __tablename__ = 'series_repeticoes'
 
-  grupo_treino_id = Column(Integer, ForeignKey('grupo_treino_diario.grupo_treino_id'), primary_key=True)
+  grupo_treino_diario_id = Column(Integer, ForeignKey('grupo_treino_diario.grupo_treino_diario_id'), primary_key=True)
   exercicio_id = Column(Integer, ForeignKey('exercicio.exercicio_id'), primary_key=True)
   series = Column(Integer, nullable=False)
   repeticoes = Column(Integer, nullable=False)

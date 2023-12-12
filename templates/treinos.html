@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treinos - (user)</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="../static/style.css">
-
-    <link rel="icon" href="./favicon.svg" type="img/svg+xml">
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.svg') }}" type="img/svg+xml">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,8 +23,8 @@
                     <nav>
                         <ul class="nav">
                             <li><a href="planos.html">Planos</a></li>
-                            <li><a href="#">Meu treino</a   ></li>
-                            <li id="js-link-login"><a href="cadastro.html">Login</a></li>
+                            <li><a href="#">Meu treino</a></li>
+                            <li id="js-link-login"><a href="login.html">Login</a></li>
                             <li id="js-link-cadastro"><a href="cadastro.html">Cadastro</a></li>
                         </ul>
                     </nav>

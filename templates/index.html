@@ -5,9 +5,9 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Home - Fitness</title>
-   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
    <link rel="stylesheet" href="../static/style.css">
-   <link rel="icon" href="./favicon.svg" type="img/svg+xml">
+   <link rel="icon" href="{{ url_for('static', filename='img/favicon.svg') }}" type="img/svg+xml">
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,8 +24,8 @@
                   <ul class="nav">
                      <li><a href="planos.html">Planos</a></li>
                      <li><a href="treinos.html">Meu treino</a></li>
-                     <li id="js-link-login" onclick="loginActive()"><a href="cadastro.html">Login</a></li>
-                     <li id="js-link-cadastro" onclick="cadastroActive()"><a href="cadastro.html">Cadastro</a></li>
+                     <li id="js-link-login"><a href="login.html">Login</a></li>
+                     <li id="js-link-cadastro"><a href="cadastro.html">Cadastro</a></li>
                   </ul>
                </nav>
             </div>
@@ -40,7 +40,7 @@
    <section class="treinos-home container">
       <div class="container-treino-form">
          <h2 class="titulo">Monte seu treino.</h2>
-         <p>Tenha seu treino montado por profissionais capacitados.</p>
+         <p>Tenha seu treino montado por profissionais<br>capacitados.</p>
          <form action="./" method="GET">
             <div>
                <label for="objetivo">Objetivo</label>

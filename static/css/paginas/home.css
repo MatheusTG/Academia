@@ -1,5 +1,5 @@
 #home .main-container {
-    background-image: url('../img/fundo-header.jpg');
+    background-image: url('../../img/fundo-header.jpg');
   }
 
 #home {
@@ -78,54 +78,56 @@
 }
 
 .treinos-home{
+    display: grid;
+    grid-template-columns: 1.25fr 1fr;
+    align-items: center;
     background-color: var(--cor01);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 2px;
+    margin-bottom: 120px;
 }
 
-.container-treino-form {
-    display: flex;
-    justify-content: center;
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.container-treino-form h2 {
+    margin-bottom: 12px;
 }
 
-.container-treino-form  h2{
-    color: var(--cor02);
-    height: 30px;
-}
-
-.container-treino-form p{
-    color: var(--cor05);
+.container-treino-form > p{
+    font-family: 'Barlow';
+    font-size: 1.125rem;
+    color: var(--cor09);
+    margin-bottom: 32px;
 }
 
 .container-treino-form label{
     display: block;
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-family: 'IBM Plex Mono';
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 8px;
 }
 .container-treino-form input, select{
-    width: 20vw;
-    height: 4.8vh;
     box-sizing: border-box;
-    background-color:  var(--cor07);
-    margin: 5px;
-    border-radius: 2px;
-    border: 0.1 solid var(--cor05);
+    width: 40%;
+    background-color: var(--cor07);
+    border: none;
+    padding: 12px;
+}
+
+.container-treino-form form div {
+    margin-bottom: 40px;
 }
 
 .container-treino-form button{
     background-color: var(--cor03);
     color: var(--cor02);
     border: none;
-    width: 80px;
-    height: 30px;
-    border-radius: 4px;    
-    margin: 20px;
+    border-radius: 8px;
+    padding: 16px 48px;
+    font-family: 'Barlow';
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.container-treino-form button:hover {
+    background-color: var(--cor11);
 }
 
 .container-treino-painel {

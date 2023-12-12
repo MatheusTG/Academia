@@ -5,8 +5,8 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Cadastro - Fitness</title>
-   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-   <link rel="icon" href="./favicon.svg" type="img/svg+xml">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   <link rel="icon" href="{{ url_for('static', filename='img/favicon.svg') }}" type="img/svg+xml">
    <link rel="stylesheet" href="../static/style.css">
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
                   <ul class="nav">
                      <li><a href="planos.html">Planos</a></li>
                      <li><a href="treinos.html">Meu treino</a></li>
-                     <li id="js-link-login"><a href="#">Login</a></li>
+                     <li id="js-link-login"><a href="login.html">Login</a></li>
                      <li id="js-link-cadastro"><a href="#">Cadastro</a></li>
                   </ul>
                </nav>
@@ -79,27 +79,6 @@
          </form>
       </div>
    </section>
-
-   <section class="login-container container">
-      <div class="login-content">
-         <h2>Login</h2>
-         <button></button>
-         <form action="/cadastro.html" class="form-login">
-               <div class="form-container">
-                  <div>
-                     <label for="email">E-mail</label>
-                     <input type="email-login" id="email-login" name="email"/>
-                  </div>
-                  <div>
-                     <label for="senha">Senha</label>
-                     <input type="password" id="senha" name="senha"/>
-                  </div>
-               </div>
-               <button class="enviar">ENVIAR</button>
-         </form>
-      </div>
-   </section>
-
 
    <footer class="footer">
       <div class="footer-content container">
