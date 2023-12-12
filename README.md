@@ -1,0 +1,5 @@
+# Academia
+
+```
+print('Olá mundo!')
+```
