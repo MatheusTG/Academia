@@ -1,6 +1,8 @@
 from infra.repository.treino_repository import TreinoRepository
 from infra.repository.clientes_repository import CLienteRepository
 from infra.repository.plano_repository import PlanoRepository
+from infra.repository.treino_diario_repository import TreinoDiarioRepository
+from infra.repository.franquia_repository import FranquiaRepository
 
 from infra.configs.base import Base
 from infra.configs.connection import DBConnectionHandler
@@ -10,22 +12,21 @@ from infra.entities import *
 
 from flask import Flask, render_template, request
 
+from random import randint
+
+# repo_cliente = CLienteRepository()
+# print(repo_cliente.select().join(Treino, Cliente.treino_id == Treino.treino_id).all())
+
+# with DBConnectionHandler() as db:
+#   valor = db.session. \
+#   query(Cliente.nome, Treino.frequencia) \
+#   .join(Treino, Cliente.treino_id == Treino.treino_id) \
+#   .all()
+#   print(valor)
+
+# print(CLienteRepository().select(Cliente.nome, Treino.frequencia).join(Treino, Cliente.treino_id == Treino.treino_id).all())
+
 db = DBConnectionHandler()
-
-# repo_treino = TreinoRepository()
-# repo_treino.insert(
-#   treino_id=1,
-#   frequencia=5,
-#   objetivo='Gnhar massa'
-# )
-
-# repo_plano = PlanoRepository()
-# repo_plano.insert(
-#   plano_id=1,
-#   duracao=1,
-#   preco='R$ 89,90',
-#   nome='mensal',
-# )
 
 app = Flask(__name__)
 
@@ -53,8 +54,9 @@ def cadastro():
       peso=request.args.get('peso'),
       senha=request.args.get('senha'),
       data_nasc=request.args.get('data-nasc'),
-      plano_id=1,
-      treino_id=1,
+      plano_id=randint(1, len(PlanoRepository().select())),
+      franquia_id=randint(1, len(TreinoRepository().select())),
+      treino_id=randint(1, len(TreinoRepository().select())),
     )
   return render_template('cadastro.html')
 

@@ -4,9 +4,9 @@ class RepositoryTool:
   def __init__(self, table):
     self.table = table
 
-  def select(self):
+  def select(self, *query):
     with DBConnectionHandler() as db:
-      data = db.session.query(self.table).all()
+      data = db.session.query(*query)
       return data
   
   def insert(self, **kwargs):

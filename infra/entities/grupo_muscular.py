@@ -7,6 +7,7 @@ class GrupoMuscular(Base):
   grupo_muscular_id = Column(Integer, primary_key=True)
   nome = Column(String, nullable=False)
   categoria = Column(String, nullable=False)
+  treino_diario_id = Column(Integer, ForeignKey('treino_diario.treino_diario_id'))
 
   def __repr__(self):
     return f''' 

@@ -5,8 +5,8 @@ class Plano(Base):
   __tablename__ = 'plano'
 
   plano_id = Column(Integer, primary_key=True)
-  duracao= Column(String, nullable=False)
   preco = Column(String, nullable=False)
+  duracao= Column(String, nullable=False)
   nome=Column(String, nullable=False)
 
   def __repr__(self):

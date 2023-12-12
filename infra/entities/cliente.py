@@ -13,7 +13,7 @@ class Cliente(Base):
     email = Column(String, nullable=False)
     senha = Column(String, nullable=False)
     plano_id = Column(Integer, ForeignKey('plano.plano_id'))
-    # franquia_id = Column(Integer, ForeignKey('franquia.franquia_id'))
+    franquia_id = Column(Integer, ForeignKey('franquia.franquia_id'))
     treino_id = Column(Integer, ForeignKey('treino.treino_id'))
 
     def __repr__(self):

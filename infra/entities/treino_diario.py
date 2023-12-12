@@ -7,6 +7,7 @@ class TreinoDiario(Base):
 
   treino_diario_id = Column(Integer, primary_key=True)
   cardio = Column(Boolean)
+  treino_id = Column(Integer, ForeignKey('treino.treino_id'))
   grupo_muscular_id = relationship('GrupoMuscular', backref='grupo_muscular', lazy='subquery')
 
   def __repr__(self):
