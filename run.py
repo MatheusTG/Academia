@@ -54,9 +54,9 @@ def cadastro():
       peso=request.args.get('peso'),
       senha=request.args.get('senha'),
       data_nasc=request.args.get('data-nasc'),
-      plano_id=randint(1, len(PlanoRepository().select())),
-      franquia_id=randint(1, len(TreinoRepository().select())),
-      treino_id=randint(1, len(TreinoRepository().select())),
+      plano_id=randint(1, len(PlanoRepository().select(Plano.plano_id).all())),
+      franquia_id=randint(1, len(FranquiaRepository().select(Franquia.franquia_id).all())),
+      treino_id=randint(1, len(TreinoRepository().select(Treino.treino_id).all())),
     )
   return render_template('cadastro.html')
 
