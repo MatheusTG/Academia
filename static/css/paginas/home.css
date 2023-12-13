@@ -1,5 +1,6 @@
 #home .main-container {
     background-image: url('../../img/fundo-header.jpg');
+    background-position-y: 10%;
   }
 
 #home {
@@ -8,73 +9,6 @@
 
 #home .main-container {
     margin-bottom: 120px;
-}
-
-.planos-home{
-    background-color: var(--cor06);
-    color: var(--cor01);
-    padding: 20px;
-}
-
-.planos-top{
-    display: flex;
-    align-items: center;
-}
-
-.planos-top h2 {
-    margin: 20px auto 20px 20px;
-  }
-  
-.planos-lista {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    margin: 0px ;
-    gap: 30px;
-}
-
-.planos-lista li{
-    margin-bottom: 10px;
-}
-
-.planos-home a{
-    text-decoration: none;
-    justify-content: end;
-    color: var(--cor01);
-}
-
-.planos-item{
-    border: 0.5px solid var(--cor02);
-    padding: 20px;
-    text-align: center;
-    border-radius: 4px;
-    margin-bottom: 20px;
-}
-
-.planos-item ul{
-    padding: 0;
-}
-
-.planos-item a{
-    text-align: left;
-    display: block;
-    margin-top: 8px;
-}
-
-.planos-item ul li {
-    margin-bottom: 10px; 
-  }
-
-.planos-header{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 8px;
-}
-
-.planos button{
-    margin-left: 0;
-    width: 100%;
 }
 
 .treinos-home{
@@ -108,7 +42,8 @@
     width: 40%;
     background-color: var(--cor07);
     border: none;
-    padding: 12px;
+    padding: 16px 8px;
+    font-family: 'IBM Plex Mono';
 }
 
 .container-treino-form form div {
@@ -211,3 +146,6 @@
     text-align: center;
 }
 
+#home .planos {
+    background-color: var(--cor06);
+}

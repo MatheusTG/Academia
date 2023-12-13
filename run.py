@@ -14,6 +14,7 @@ from flask import Flask, render_template, request
 
 from random import randint
 
+db = DBConnectionHandler()
 
 app = Flask(__name__)
 

@@ -1,6 +1,5 @@
-#planos{
+#planos {
     background-color: var(--cor02);
-    color:var(--cor01);
 }
 
 #planos .main-container {
@@ -8,12 +7,24 @@
 }
 
 .planos{
-    background-color: var(--cor06);
-    margin-left: 80px; ;
-    border-radius: 40px 0px 0px 40px;
-    padding:80px ;
-    
+    padding: 80px;
+    position: relative; 
 }
+
+#planos .planos::before {
+    content: '';
+    display: block;
+    width: 90%;
+    height: 100%;
+    background-color: var(--cor06);
+    border-radius: 40px 0px 0px 40px;
+    margin-left: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
 .planos-topo {
     display: flex;
     justify-content: space-between;
@@ -42,28 +53,47 @@
     color: white;
     text-decoration: none;
     font-weight: 500;
+    align-self: end;
 }
 .planos-lista{
     display: flex;
     gap: 40px;
 }
+
 .planos-item{
     padding: 40px;
     background-color: var(--cor02);
-    border-radius: 8px;   
+    border-radius: 8px; 
+    box-sizing: border-box;
+    width: 500px; 
+    height: max-content;
 }
+
 .planos-item h3{
     font-size: 2rem;
     font-family: 'Barlow';
     font-weight: bold;
     width: 400px;
+    color: var(--cor01);
 }
-.planos-header{
-    display: flex;
-    align-items: center;
-    margin-left: 12px;
-    border-bottom:2px solid var(--cor01);
+
+.planos-item ul {
+    margin-bottom: 40px;
 }
+
+.planos-item ul li {
+    font-family: 'IBM Plex Mono';
+    font-weight: normal;
+    font-size: 1.125rem;
+    margin-bottom: 20px;
+    color: var(--cor07);
+}
+
+.planos-item a{
+    text-align: left;
+    display: block;
+}
+
 .planos-header span{
     font-family: 'Barlow';
     font-size: 1.5rem;
@@ -71,47 +101,66 @@
     color: var(--cor05);
     white-space: nowrap;
 }
+
+.plano-mensal .planos-header {
+    border-bottom: 4px solid var(--cor01); 
+}
+
+.plano-semestral .planos-header {
+    border-bottom: 4px solid var(--cor04); 
+}
+
+.plano-anual .planos-header {
+    border-bottom: 4px solid var(--cor03);
+}
+
+.planos-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:2px solid var(--cor01);
+    padding-bottom: 12px;
+    margin-bottom: 32px;
+}
+
+.planos-header h3 {
+    margin-left: 12px;
+}
+
+.planos-lista {
+    width: max-content;
+    margin: auto;
+}
+
 a.button {
     display: inline-block;
     padding: 10px 20px; 
     text-decoration: none;
+    color:var(--cor01);
+    border-radius: 5px;
+    font-family: 'Barlow';
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+a.button-cinza {
     background-color:var(--cor10);
-    color:var(--cor01);
-    border-radius: 5px;
-    font-family: 'Barlow';
-    font-weight: bold;
-    font-size: 18px;
-  }
-  a.button-azul {
-    display: inline-block;
-    padding: 10px 20px; 
-    text-decoration: none;
+}
+
+a.button-azul {
     background-color:var(--cor04);
-    color:var(--cor01);
-    border-radius: 5px;
-    font-family: 'Barlow';
-    font-weight: bold;
-    font-size: 18px;
-  }
-  a.button-am {
-    display: inline-block;
-    padding: 10px 20px; 
-    text-decoration: none;
+}
+
+a.button-amarelo {
     background-color:var(--cor03);
-    color:var(--cor02);
-    border-radius: 5px;
-    font-family: 'Barlow';
-    font-weight: bold;
-    font-size: 18px;
-  }
-  .planos-mensal .planos-header {
-    border-bottom: 2px solid var(--cor01); 
+    color: var(--cor02);
+    font-weight: 900;
 }
 
-.planos-semestral .planos-header {
-    border-bottom: 2px solid var(--cor04); 
+.plano-mensal {
+    margin-top: 40px;
 }
 
-.planos-anual .planos-header {
-    border-bottom: 2px solid var(--cor03);
+.plano-anual {
+    margin-top: 20px;
 }
