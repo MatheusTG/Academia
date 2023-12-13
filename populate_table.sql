@@ -9,7 +9,7 @@ INSERT INTO cidade (cidade_id, nome, estado, populacao)VALUES
 (2, 'Londrina', 'Paraná', 575377),
 (3, 'Maringá', 'Paraná', 403063);
 
-
+	
 INSERT INTO franquia (franquia_id, cidade_id, proprietario, telefone, bairro, rua, numero, financeiro_id) VALUES
 (1, 1, 'Adam Sandler', '(44)99999-9999', 'Jardim Flores', 'Rua Rosa', 123, 1),
 (2, 2, 'Beyoncé', '(43)91234-5678', 'Bairro Queen', 'Rua King', 332, 2),

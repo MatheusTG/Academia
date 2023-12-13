@@ -1,5 +1,5 @@
 from infra.repository.treino_repository import TreinoRepository
-from infra.repository.clientes_repository import CLienteRepository
+from infra.repository.clientes_repository import ClienteRepository
 from infra.repository.plano_repository import PlanoRepository
 from infra.repository.treino_diario_repository import TreinoDiarioRepository
 from infra.repository.franquia_repository import FranquiaRepository
@@ -14,19 +14,6 @@ from flask import Flask, render_template, request
 
 from random import randint
 
-# repo_cliente = CLienteRepository()
-# print(repo_cliente.select().join(Treino, Cliente.treino_id == Treino.treino_id).all())
-
-# with DBConnectionHandler() as db:
-#   valor = db.session. \
-#   query(Cliente.nome, Treino.frequencia) \
-#   .join(Treino, Cliente.treino_id == Treino.treino_id) \
-#   .all()
-#   print(valor)
-
-# print(CLienteRepository().select(Cliente.nome, Treino.frequencia).join(Treino, Cliente.treino_id == Treino.treino_id).all())
-
-db = DBConnectionHandler()
 
 app = Flask(__name__)
 
@@ -43,7 +30,7 @@ def planos():
 @app.route('/cadastro.html', methods=['GET', 'POST'])
 def cadastro():
   if request.method == 'GET' and request.args:
-    repo_cliente = CLienteRepository()
+    repo_cliente = ClienteRepository()
 
     repo_cliente.insert(
       cpf=request.args.get('cpf'),
@@ -54,9 +41,9 @@ def cadastro():
       peso=request.args.get('peso'),
       senha=request.args.get('senha'),
       data_nasc=request.args.get('data-nasc'),
-      plano_id=randint(1, len(PlanoRepository().select())),
-      franquia_id=randint(1, len(TreinoRepository().select())),
-      treino_id=randint(1, len(TreinoRepository().select())),
+      plano_id=randint(1, 4),
+      franquia_id=randint(1, 3),
+      treino_id=randint(1, 15),
     )
   return render_template('cadastro.html')
 
