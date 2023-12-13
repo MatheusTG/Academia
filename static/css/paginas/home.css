@@ -39,7 +39,7 @@
 }
 .container-treino-form input, select{
     box-sizing: border-box;
-    width: 40%;
+    width: 300px;
     background-color: var(--cor07);
     border: none;
     padding: 16px 8px;

@@ -98,3 +98,16 @@
     font-family: 'IBM FLex Mono';
     font-size: 150%
 }
+
+.cadastro-topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cadastro-button {
+    width: 60px;
+    height: 24px;
+    border-radius: 16px;
+    background-color: var(--cor07);
+}

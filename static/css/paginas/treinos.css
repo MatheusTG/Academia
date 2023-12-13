@@ -97,9 +97,8 @@ section.container-treino-geral {
 /* ----------------------------- */
 
 .container-solicitar-treino {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 #form-div h1 {
@@ -124,7 +123,6 @@ section.container-treino-geral {
 .form-solicitar-treino .input-box {
     font-family: IBM Plex Mono;
     font-weight: 800;
-    max-width: 70%;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
