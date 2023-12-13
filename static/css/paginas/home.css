@@ -79,13 +79,12 @@
     content: '';
     position: absolute;
     height: 100%;
+    width: 100%;
     z-index: -1;
     background-color: var(--cor06);
     border-radius: 40px 0 0 40px;
     top: 0px;
 }
-
-#home .container-treino-painel::before {width: 1000px;}
 
 .container-treino-painel li {
     display: grid;
@@ -149,3 +148,25 @@
 #home .planos {
     background-color: var(--cor06);
 }
+
+@media (max-width: 1200px) {
+    .treinos-home {
+        display: block;
+    }
+    .container-treino-painel::before {
+        display: none;
+    }
+    .container-treino-painel {
+        padding: 0px 80px;
+    }
+    .container-treino-form {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 800px) {
+    .container-treino-painel {
+        padding: 0px;
+    }
+}
+

@@ -105,9 +105,31 @@
     align-items: center;
 }
 
-.cadastro-button {
+.button-cadastro-login {
     width: 60px;
     height: 24px;
     border-radius: 16px;
     background-color: var(--cor07);
+    position: relative;
+    cursor: pointer;
+}
+
+.button-cadastro-login::before {
+    content: '';
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    background-color: var(--cor03);
+    position: absolute;
+    border-radius: 16px;
+    top: -1.5px;
+    border: 1px solid black;
+}
+
+.cadastro-button::before {
+    right: 0px;
+}
+
+.login-button::before {
+    left: 0px;
 }

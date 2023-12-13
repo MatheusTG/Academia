@@ -52,7 +52,9 @@ section.container-treino-geral {
     gap: 120px;
 }
 
-#treinos .container-treino-painel li:nth-child(odd) {padding: 30px 60px 30px 30px;}
+#treinos .container-treino-painel li:nth-child(odd) {
+    padding: 30px 60px 30px 30px;
+}
 
 .especificacoes-treino {
     color: var(--cor01);
@@ -76,7 +78,9 @@ section.container-treino-geral {
     border: 0;
     border-radius: 10px;
 }
-.selecionar-musculo ul button:hover{background-color: var(--cor05);}
+.selecionar-musculo ul button:hover{
+    background-color: var(--cor05);
+}
 
 .especificacoes-table {
     font-family: IBM Plex Mono;
@@ -118,6 +122,7 @@ section.container-treino-geral {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    margin-bottom: 120px;
 }
 
 .form-solicitar-treino .input-box {
@@ -130,7 +135,7 @@ section.container-treino-geral {
 
 .form-solicitar-treino .select {
     background-color: var(--cor07);
-    background-image: url(../img/select_arrow.svg);
+    background-image: url('../img/select_arrow.svg');
     background-repeat: no-repeat;
     background-size: 2rem;
     background-position: 98% center;
@@ -164,5 +169,31 @@ section.container-treino-geral {
 }
 
 #bodybuilder-div img {
-    display: block;
+    display: block !important;
+}
+
+#bodybuilder-div {
+    align-self: end;
+}
+
+@media (max-width: 1600px) {
+    .container-treino {
+        background-color: transparent;
+    }
+    .container-treino-painel::before {
+        background-color: transparent;
+    }
+    .especificacoes-treino {
+        color: black;
+    }
+}
+
+@media (max-width: 1250px) {
+    .container-solicitar-treino {
+        display: block;
+    }
+    #bodybuilder-div {
+        display: none;
+    }
+
 }

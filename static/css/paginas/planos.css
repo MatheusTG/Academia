@@ -7,18 +7,18 @@
 }
 
 .planos{
-    padding: 80px;
+    padding: 80px 0;
     position: relative; 
 }
 
 #planos .planos::before {
     content: '';
     display: block;
-    width: 90%;
+    width: 92%;
     height: 100%;
     background-color: var(--cor06);
     border-radius: 40px 0px 0px 40px;
-    margin-left: 10%;
+    margin-left: 8%;
     position: absolute;
     top: 0;
     right: 0;
@@ -57,6 +57,8 @@
 }
 .planos-lista{
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 40px;
 }
 
@@ -126,11 +128,6 @@
     margin-left: 12px;
 }
 
-.planos-lista {
-    width: max-content;
-    margin: auto;
-}
-
 a.button {
     display: inline-block;
     padding: 10px 20px; 
@@ -163,4 +160,33 @@ a.button-amarelo {
 
 .plano-anual {
     margin-top: 20px;
+}
+
+@media (max-width: 2000px) {
+    #planos .planos::before {
+        width: 100%;
+        margin: 0px;
+        border-radius: 0px;
+    }
+}
+
+@media (max-width: 1580px) {
+    .plano-mensal {
+        margin-top: 0px;
+    }
+    .plano-anual {
+        margin-top: 0px;
+    }
+    .planos-topo {
+        margin-bottom: 80px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .planos-item {
+        width: 70%;
+    }
+    .planos-item .button {
+        padding: 12px 24px;
+    }
 }

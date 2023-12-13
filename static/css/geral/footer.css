@@ -56,3 +56,35 @@
    display: grid;
    grid-template-columns: 100px 100px;
 }
+
+@media (max-width: 1100px) {
+   .footer-copyright,
+   .footer-criadores,
+   .footer-paginas {
+      padding: 0px;
+   }
+   .footer-content div + div {
+      border-left: none;
+   }
+   .footer-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 80px 40px;
+   }
+}
+
+@media (max-width: 650px) {
+   .footer-content {
+      display: grid;
+      grid-template-columns: 1fr;
+   }
+   .footer-content div + div {
+      margin-top: 80px;
+   }
+   .footer-criadores ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+   }
+}
