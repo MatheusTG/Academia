@@ -15,4 +15,17 @@ function cadastroButton() {
   }
 }
 
+function menu() {
+  const menu = document.querySelector('.header')
+  menu.addEventListener('click', () => {
+    const nav = document.querySelector('.nav')
+    if (nav.style.display === 'flex') {
+      nav.style.display = 'none'
+    } else {
+      nav.style.display = 'flex'
+    }
+  })
+}
+
+menu()
 cadastroButton()

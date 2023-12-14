@@ -66,3 +66,31 @@
 .button-main:hover {
   background-color: var(--cor11);
 }
+
+@media (max-width: 720px) {
+  .nav {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    flex-direction: column;
+    background-color: var(--cor02);
+    padding: 120px 20px 20px 20px;
+    border: 4px solid white;
+  }
+  .header-content {
+    position: relative;
+  }
+  .header-content::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: white;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    box-shadow: 0 10px 0 0px white, 0 -10px 0 0px white;
+    z-index: 1;
+  }
+}

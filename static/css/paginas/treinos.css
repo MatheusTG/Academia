@@ -179,12 +179,31 @@ section.container-treino-geral {
 @media (max-width: 1600px) {
     .container-treino {
         background-color: transparent;
+        padding: 0 40px;
     }
     .container-treino-painel::before {
         background-color: transparent;
     }
     .especificacoes-treino {
         color: black;
+    }
+    .especificacoes-table tr:nth-child(2n) {
+        color: white;
+    }
+    .especificacoes-treino {
+        background-color: var(--cor07);
+        border-radius: 16px;
+    }
+}
+
+@media (max-width: 1350px) {
+    .container-treino {
+        display: block;
+    }
+    .container-treino-painel {
+        padding: 0px;
+        width: 60%;
+        margin-bottom: 80px;
     }
 }
 
@@ -196,4 +215,12 @@ section.container-treino-geral {
         display: none;
     }
 
+}
+
+@media (max-width: 900px) {
+    .container-treino-painel {
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 80px;
+    }
 }

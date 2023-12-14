@@ -5,7 +5,7 @@ from infra.configs.base import Base
 
 class DBConnectionHandler:
   def __init__(self):
-    self.__connection_string = 'postgresql://postgres:jiujitsu1010@localhost:5432/academia'
+    self.__connection_string = 'postgresql://postgres:matheus0604@localhost:5432/academia'
     self.__engine = self.__create_database_engine()
     self.session = None 
 
