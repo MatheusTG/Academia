@@ -13,7 +13,7 @@
 }
 
 .footer-content h3 {
-   font-family: 'Barlow';
+   font-family: var(--fonte01);
    font-size: 2rem;
    font-weight: bold;
    color: var(--cor01);
@@ -29,7 +29,7 @@
 }
 
 .footer-copyright p {
-   font-family: 'Barlow';
+   font-family: var(--fonte01);
    font-size: 1.125rem;
    color: var(--cor05);
 }
@@ -41,7 +41,7 @@
 
 .footer-criadores li,
 .footer-paginas li {
-   font-family: 'IBM Plex Mono';
+   font-family: var(--fonte02);
    font-size: 1rem;
    font-weight: normal;
    color: var(--cor05);

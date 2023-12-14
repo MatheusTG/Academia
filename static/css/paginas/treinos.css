@@ -1,5 +1,5 @@
 #treinos {
-    font-family: Barlow;
+    font-family: var(--fonte01);
 }
 
 #treinos .main-container {
@@ -10,7 +10,7 @@
 /* ----------------------------- */
 
 div.informacoes-usuario {
-    color: var(--cor01);
+    color: var(--cor01); 
     background-color: var(--cor02);
     font-size: 24px;
     padding: 70px 0;
@@ -23,7 +23,7 @@ div.informacoes-usuario {
 
 div.informacoes-usuario span {
     color: var(--cor05);
-    font-family: IBM Plex Mono;
+    font-family: var(--fonte02);
     font-size: 12px;
 }
 
@@ -83,7 +83,7 @@ section.container-treino-geral {
 }
 
 .especificacoes-table {
-    font-family: IBM Plex Mono;
+    font-family: var(--fonte02);
     border-collapse: collapse;
     text-align: center;
     width: 100%;
@@ -126,7 +126,7 @@ section.container-treino-geral {
 }
 
 .form-solicitar-treino .input-box {
-    font-family: IBM Plex Mono;
+    font-family: var(--fonte02);
     font-weight: 800;
     display: flex;
     flex-direction: column;

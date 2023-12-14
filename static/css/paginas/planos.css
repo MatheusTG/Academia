@@ -32,7 +32,7 @@
    
 }
 .titulo-planos{
-    font-family: 'IBM Plex Mono';
+    font-family: var(--fonte02);
     
 }
 .titulo-planos span{
@@ -41,14 +41,14 @@
 
 }
 .titulo-planos h2{
-    font-family: 'Barlow';
+    font-family: var(--fonte01);
     font-size: 4rem;
 }
 .titulo-planos .titulo{
     color: white;
 }
 .planos-topo a{
-    font-family: 'IBM Plex Mono';
+    font-family: var(--fonte02);
     font-size: 1.5rem;
     color: white;
     text-decoration: none;
@@ -73,7 +73,7 @@
 
 .planos-item h3{
     font-size: 2rem;
-    font-family: 'Barlow';
+    font-family: var(--fonte01);
     font-weight: bold;
     width: 400px;
     color: var(--cor01);
@@ -84,7 +84,7 @@
 }
 
 .planos-item ul li {
-    font-family: 'IBM Plex Mono';
+    font-family: var(--fonte02);
     font-weight: normal;
     font-size: 1.125rem;
     margin-bottom: 20px;
@@ -97,7 +97,7 @@
 }
 
 .planos-header span{
-    font-family: 'Barlow';
+    font-family: var(--fonte01);
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--cor05);
@@ -134,7 +134,7 @@ a.button {
     text-decoration: none;
     color:var(--cor01);
     border-radius: 5px;
-    font-family: 'Barlow';
+    font-family: var(--fonte01);
     font-weight: bold;
     font-size: 18px;
     letter-spacing: 1px;
