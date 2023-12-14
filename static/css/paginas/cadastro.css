@@ -77,12 +77,10 @@
 .enviar{
     background-color: var(--cor03);
     border-radius: 8px;
-    border: none;
     padding: 16px 64px 16px 64px;
     font-family: var(--fonte01);
     font-size: 1.5rem !important;
     font-weight: bold;
-    font-size: medium;
     border: 2px solid var(--cor03);
 }
 
