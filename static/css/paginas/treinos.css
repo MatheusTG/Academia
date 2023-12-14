@@ -65,10 +65,16 @@ section.container-treino-geral {
     font-size: 2rem; 
 }
 
+.especificacoes-treino th {
+    padding-bottom: 12px;
+}
+
 .selecionar-musculo {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--cor08);
+    margin-bottom: 20px;
 }
 
 .selecionar-musculo ul {display: flex;}

@@ -35,7 +35,6 @@ def cadastro():
   if request.method == 'GET' and request.args:
     repo_cliente = ClienteRepository()
 
-    print(len(PlanoRepository().select(Plano.plano_id).all()))
     repo_cliente.insert(
       cpf=request.args.get('cpf'),
       nome=request.args.get('nome'),
@@ -69,7 +68,7 @@ def cadastro():
     with open('data/user.json', 'w') as file:
       json.dump(user_dados, file)
 
-    return render_template('treinos.html', nome=nome, objetivo=objetivo, frequencia=frequencia)
+    return render_template('treinos.html', nome=nome, objetivo=objetivo.capitalize(), frequencia=frequencia)
   return render_template('cadastro.html')
 
 @app.route('/login.html', methods=['GET', 'POST'])
@@ -96,7 +95,7 @@ def login():
 
         with open('data/user.json', 'w') as file:
           json.dump(data_cliente_dict, file)
-        return render_template('treinos.html', nome=nome, objetivo=objetivo, frequencia=frequencia)
+        return render_template('treinos.html', nome=nome, objetivo=objetivo.capitalize(), frequencia=frequencia)
 
   return render_template('login.html')
 
@@ -109,7 +108,7 @@ def treinos():
   objetivo = user_dados['objetivo']
   frequencia = user_dados['frequencia']
 
-  return render_template('treinos.html', nome=nome, objetivo=objetivo, frequencia=frequencia)
+  return render_template('treinos.html', nome=nome, objetivo=objetivo.capitalize(), frequencia=frequencia)
 
 if __name__ == '__main__':
   app.run(debug=True)
