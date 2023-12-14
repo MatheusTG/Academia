@@ -16,7 +16,7 @@ function cadastroButton() {
 }
 
 function menu() {
-  const menu = document.querySelector('.header')
+  const menu = document.querySelector('.menu')
   menu.addEventListener('click', () => {
     const nav = document.querySelector('.nav')
     if (nav.style.display === 'flex') {

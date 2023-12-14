@@ -4,13 +4,13 @@ from infra.configs.base import Base
 class Cliente(Base):
     __tablename__ = 'cliente'
 
-    cpf = Column(String, primary_key=True)
+    cpf = Column(String, nullable=False)
     nome = Column(String, nullable=False)
     sobrenome = Column(String, nullable=False)
     telefone = Column(String, nullable=False)
     data_nasc = Column(Date, nullable=False)
     peso = Column(Numeric, nullable=False)
-    email = Column(String, nullable=False)
+    email = Column(String, primary_key=True)
     senha = Column(String, nullable=False)
     plano_id = Column(Integer, ForeignKey('plano.plano_id'))
     franquia_id = Column(Integer, ForeignKey('franquia.franquia_id'))

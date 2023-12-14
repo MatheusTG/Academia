@@ -75,11 +75,11 @@
     border-radius: 40px 0 0 40px;
 }
 
-.container-treino-painel::before {
+#home .container-treino-painel::before {
     content: '';
     position: absolute;
     height: 100%;
-    width: 100%;
+    width: 1000px;
     z-index: -1;
     background-color: var(--cor06);
     border-radius: 40px 0 0 40px;

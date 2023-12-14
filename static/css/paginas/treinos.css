@@ -61,7 +61,9 @@ section.container-treino-geral {
     padding: 40px;
 }
 
-.especificacoes-treino h3{font-size: 2rem;}
+.especificacoes-treino h3{
+    font-size: 2rem; 
+}
 
 .selecionar-musculo {
     display: flex;

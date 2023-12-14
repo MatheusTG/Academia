@@ -74,6 +74,30 @@ def cadastro():
 
 @app.route('/login.html', methods=['GET', 'POST'])
 def login():
+  if request.method == 'GET':
+    data_cliente = ClienteRepository() \
+      .select(Cliente.nome, Cliente.email, Cliente.senha, Treino.objetivo, Treino.frequencia) \
+      .join(Treino, Cliente.treino_id == Treino.treino_id) \
+      .filter(Cliente.email == request.args.get('email')) \
+      .all()
+
+    print(data_cliente)
+    if data_cliente:
+      if data_cliente[0][2] == request.args.get('senha'):
+        nome = data_cliente[0][0]
+        objetivo = data_cliente[0][3]
+        frequencia = data_cliente[0][4]
+
+        data_cliente_dict = {
+          'nome':nome,
+          'objetivo': objetivo,
+          'frequencia': frequencia,
+        }
+
+        with open('data/user.json', 'w') as file:
+          json.dump(data_cliente_dict, file)
+        return render_template('treinos.html', nome=nome, objetivo=objetivo, frequencia=frequencia)
+
   return render_template('login.html')
 
 @app.route('/treinos.html')

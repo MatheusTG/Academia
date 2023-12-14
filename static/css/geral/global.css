@@ -40,3 +40,9 @@ ul{
   font-weight: bold;
   color: black;
 }
+
+@media (max-width: 600px) {
+  .titulo {
+    font-size: 3rem;
+  }
+}
